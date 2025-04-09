@@ -1,0 +1,109 @@
+/* === GENERAL STYLES === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark Grey */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: limegreen;
+}
+
+/* === NAVIGATION BAR === */
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: limegreen;
+}
+
+/* === SECTIONS === */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.3);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* === PRODUCTS === */
+.product {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 255, 0, 0.6);
+}
+
+/* === BUTTONS === */
+button {
+    background: limegreen;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* === CART LIST === */
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    background: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+#cart-items li:hover {
+    background: limegreen;
+    color: black;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn
